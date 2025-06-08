@@ -28,7 +28,7 @@ const Kalkulator = () => {
     }
     function calculate(expression) {
         try {
-            const tokens = expression.match(/(\d+\.?\d*%?|\+|\-|\*|\/)/g); // rozdziel liczby i operatory
+            const tokens = expression.match(/(\d+\.?\d*%?|\+|\-|\*|\/)/g);
             if (!tokens) return "Błąd";
     
             let result = parseFloat(tokens[0].replace("%", ""));
